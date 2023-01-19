@@ -5,6 +5,7 @@
     background-color: #fff;
   }
 }
+
 @media (min-width: 1300px) {
   body {
     justify-content: center;
@@ -20,14 +21,14 @@
 body {
   display: grid;
   grid-template-rows: repeat(4, auto);
-  margin: 0em 5em;
+  margin: 5em;
   justify-content: center;
 }
 
 #home {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 
 header {
@@ -56,7 +57,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px;
   width: 259px;
   font-weight: 500;
   font-size: 15px;
@@ -106,12 +106,10 @@ a {
   line-height: 60px;
   letter-spacing: 0.37px;
   color: #091e42;
-  margin: 0px;
 }
 
 .hme-txt2 {
   width: 920px;
-  /* height: 98px; */
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -123,7 +121,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   height: 24px;
   font-weight: 500;
   font-size: 16px;
@@ -166,18 +163,11 @@ a {
   align-items: flex-start;
   padding: 24px;
   gap: 10px;
-  /* width: 544px; */
-  /* height: 445px; */
-}
-
-.prt-txt1 {
-  padding: 0px;
 }
 
 .prt-txt2 {
   font-weight: 400;
   font-size: 16px;
-  margin-top: 0px;
   line-height: 24px;
   color: #344563;
 }
@@ -195,7 +185,6 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  /* width: 297px; */
   height: 30px;
 }
 
@@ -223,7 +212,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
   margin-top: 0px;
   list-style: none;
   gap: 8px;
@@ -256,13 +244,13 @@ a {
 }
 
 #about {
-background-color: #fff;
-width: 1440px;
-height: 924px;
-display: flex;
-flex-direction: row;
-align-items: center;
-border-top-right-radius: 160px;
+  background-color: #fff;
+  width: 1440px;
+  height: 924px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top-right-radius: 160px;
 }
 
 .abt-txt1 {
@@ -290,7 +278,6 @@ border-top-right-radius: 160px;
 
 .abt-prmrytxt2 {
   font-weight: 400;
-  margin: 0px;
   color: #344563;
 }
 
@@ -349,11 +336,12 @@ border-top-right-radius: 160px;
   background-image: url(./elements/cntctbckgrndpic.svg);
   background-color: #6070ff;
   border-top-left-radius: 120px;
-
   width: max-content;
 }
 
-.sct-1, .sct-2, .sct-3 {
+.sct-1,
+.sct-2,
+.sct-3 {
   background-image: inherit;
 }
 
@@ -394,7 +382,6 @@ form {
   display: contents;
 }
 
-
 .frm-tgs {
   display: flex;
   padding: 12px;
@@ -410,7 +397,6 @@ form {
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
-  /* width: 140px; */
   padding: 6px 12px;
   color: #6070ff;
   letter-spacing: 0.03em;
