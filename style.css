@@ -5,9 +5,9 @@
     background-color: #fff;
   }
 }
-@media (max-width: 1300px) {
+@media (min-width: 1300px) {
   body {
-    justify-content: initial;
+    justify-content: center;
   }
 }
 
