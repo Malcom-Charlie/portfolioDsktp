@@ -1,8 +1,8 @@
-@media only screen and (min-width: 786px) {
+/* @media only screen and (min-width: 786px) {
   * {
     width: 1000px;
   }
-}
+} */
 
 @media only screen and (min-width: 1080px) {
   nav {
