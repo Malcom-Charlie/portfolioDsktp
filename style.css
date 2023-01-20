@@ -338,11 +338,11 @@
   }
 
   .cntct-ttl {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
   }
 
   .cntct-info {
@@ -387,7 +387,7 @@
     color: #6070ff;
     letter-spacing: 0.03em;
     text-align: center;
-   font-size: 17px;
+    font-size: 17px;
     margin-left: 9px;
     margin-bottom: 3rem;
   }
