@@ -416,6 +416,7 @@ form {
   .links-section {
     display: none;
   }
+
   .hamburger {
     display: block;
   }
@@ -426,15 +427,19 @@ form {
     font-weight: 700;
     font-size: 18px;
   }
+
   .text-area {
     align-items: flex-start;
   }
+
   .navbar {
     width: 330px;
   }
+
   #home {
     width: 330px;
   }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -443,6 +448,7 @@ form {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
   }
+
   .space {
     display: block;
     height: 80px;
@@ -462,6 +468,7 @@ form {
     background-image: url(./elements/backgroundpic.png);
     background-repeat: no-repeat;
   }
+
   .hme-txt1 {
     color: #172b4d;
     margin: auto;
@@ -469,23 +476,27 @@ form {
     line-height: 45px;
     width: 327px;
   }
+
   .hme-txt2 {
     color: #344563;
     margin: auto;
     font-size: 16px;
     width: 327px;
   }
+
   .letsconnect {
     font-weight: 500;
     color: #7f8cff;
     font-size: 20px;
   }
+
   .socials {
     width: 170px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
   }
+  
   ul {
     padding-inline-start: 0;
   }
