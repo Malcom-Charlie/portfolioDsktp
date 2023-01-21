@@ -32,7 +32,7 @@
   </header>
 
   <!--Headline Section-->
-  <section class="intro main-section">
+  <section id="home" class="intro">
     <div class="space"></div>
     <div class="text-area">
       <h1 class="prmrytxt1 hme-txt1">
@@ -62,7 +62,7 @@
   </section>
 
   <!--Portfolio Section-->
-  <section class="works portfolio">
+  <section  id="portfolio" class="works">
     <div class="port1">
       <img src="images/card1pic.png" alt="Tonic">
       <div>
@@ -285,20 +285,21 @@
   </section>
 
   <!---About Section-->
-  <section class="about">
-    <i class="prymrytxt1">
+  <section id="about" class="about ">
+    <div class="abt-txt1 column">
+      <i class="prymrytxt1 abt-prymrytxt1">
       <h1>
         About <br> Myself
       </h1>
-    </i>
-    <p>
+      </i>
+      <p>
       Hello I'm a software developer! I can help you build a product, feature or website. Look through some of my work
       and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
-    </p>
-    <a href="#">
+      </p>
+      <a href="#">
       <h2 class="letsconnect">LET'S CONNECT</h2>
-    </a>
-    <ul class="socials">
+      </a>
+      <ul class="socials">
       <li><a href="https://github.com/Malcom-Charlie" target="_blank"><img src="images/github.png" alt="github"></a>
       </li>
       <li><a href="https://www.linkedin.com/in/malcom-charles-49411017a/" target="_blank"><img src="images/linkedin.png"
@@ -307,13 +308,15 @@
       </li>
       <li><a href="#" target="_blank"><img src="images/cptM.png" alt="m"></a></li>
       <li><a href="#" target="_blank"><img src="images/hand.png" alt="chill"></a></li>
-    </ul>
-    <div>
+      </ul>
+      <div>
       <button class="prjctbtn">
         <span class="btntxt">Get My Resume</span>
       </button>
+      </div>
     </div>
     <span class="space"></span>
+    <div class="abt-txt2 column">
     <ul>
       <li class="rsmicn1">
         <span class="ctgry2">Languages</span>
@@ -342,11 +345,12 @@
       </li>
       <img src="/images/separator.png" alt="">
     </ul>
+    </div>
     <div class="space"></div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="space"></div>
     <div class="contact-intro">
       <h2 class="cntct-ttl">Contact me</h2>

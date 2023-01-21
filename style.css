@@ -169,6 +169,11 @@ ul {
   margin: auto;
 }
 
+.abtclmn {
+  display: none;
+  cursor: pointer;
+}
+
 .ctgry2 {
   font-weight: 500;
   font-size: 20px;
@@ -326,7 +331,7 @@ ul {
 
   /* Home section */
 
-  .main-section {
+  #home {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -376,7 +381,7 @@ ul {
     cursor: pointer;
   }
 
-  .portfolio {
+  #portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,6 +452,57 @@ ul {
     font-size: 18px;
     color: #6b778c;
   }
+
+  /* About Section */
+
+  .space {
+    display: none;
+    cursor: pointer;
+  }
+
+  #about {
+    width: 100vw;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .abt-txt1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20vw;
+    margin-top: 13pc;
+  }
+  
+  .abt-txt2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13pc;
+  }
+
+  .abt-prymrytxt1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 2px;
+    color: #091e42;
+    padding: unset;
+
+  }
+  
+  .abt-prmrytxt2 {
+    padding: unset;
+    margin: unset;
+    font-weight: 400;
+    color: #344563;
+  }
+
+  /* Contact Section */
+
+
 
 
 /* {
