@@ -319,6 +319,51 @@ ul {
     font-size: 18px;
   }
 
+  /* Home section */
+
+  .main-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(./images/hdrbckgrnd.svg);
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    height: 100vh;
+  }
+
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .hme-txt1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    margin-block-end: auto;
+    color: #091e42;
+  }
+  
+  .hme-txt2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 60vw;
+    color: #344563;
+  }
+  
+  .lets {
+    width: inherit;
+  }
+
 
 /* {
   font-family: 'Poppins', sans-serif;
