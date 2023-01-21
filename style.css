@@ -502,6 +502,95 @@ ul {
 
   /* Contact Section */
 
+  .separator {
+    display: none;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    background-image: url(./images/cntctbckgrndpic.svg);
+    background-repeat: no-repeat;
+    background-color: #6070ff;
+    border-top-left-radius: 120px;
+    width: 100vw;
+    height: 1;
+    padding: 90px;
+  }
+  
+  .sctn-1,
+  .sctn-2,
+  .sctn-3 {
+    background-image: inherit;
+  }
+
+  .sctn-2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  
+  .cntct-ttl {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .cntct-info {
+    display: table-footer-group;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    color: #ebebff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.9em;
+  }
+  
+  .frm-inputs {
+    display: contents;
+  }
+  
+  .frm-tgs {
+    display: flex;
+    padding: 12px;
+    width: 80%;
+    font-size: 17px;
+    margin: 3%;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+  }
+  
+  .sbmt-btn {
+    background: #fff;
+    border: 1px solid #7f8cff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 9px;
+    margin-bottom: 3rem;
+  }
+
+  .sbmt-btn:hover {
+    background: #7781e2;
+    color: #fff;
+  }
+
 
 
 
