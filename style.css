@@ -8,10 +8,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 330px;
+  min-width: 330px;
   margin: auto;
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
@@ -20,6 +19,14 @@ header {
   height: 3px;
   background: #6070ff;
   margin: 5px;
+}
+
+.hamburger {
+  padding-right: 20px;
+}
+
+.logo-section {
+  padding-left: 10px;
 }
 
 .links-section {
@@ -36,19 +43,18 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
   background: #fff;
-  border-radius: 16px;
-  max-width: 327px;
-  margin: auto;
-  box-sizing: content-box;
-  margin-bottom: 70px;
-  background-image: url(./images/backgroundpic.png);
+  min-width: 350px;
+  min-height: 100vh;
+  background-image: url(./images/hdrbckgrnd.svg);
   background-repeat: no-repeat;
 }
 
-.space {
-  height: 60px;
+.text-area {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -50%);
 }
 
 .prymrytxt1 {
@@ -210,6 +216,10 @@ ul {
   padding: 2px;
 }
 
+.space {
+  height: 80px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -327,27 +337,10 @@ ul {
     margin-left: 4%;
     font-weight: 700;
     font-size: 18px;
+    transform: rotate3d(0, 1, 1, 342deg);
   }
 
   /* Home section */
-
-  #home {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: url(./images/hdrbckgrnd.svg);
-    background-repeat: no-repeat;
-    min-width: 100vw;
-    height: 100vh;
-  }
-
-  .text-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
 
   .hme-txt1 {
     display: flex;
@@ -401,6 +394,11 @@ ul {
     width: 1156px;
     height: 496px;
     background-color: #fff;
+  }
+
+  .prt-img {
+    width: 100%;
+    height: 100%;
   }
 
   .prt-txt {
@@ -463,10 +461,15 @@ ul {
 
   #about {
     width: 100vw;
-    height: 250vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
+    height: 150vh;
+  }
+
+  .abttext {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 30%;
+    transform: translate(-30% -40%);
   }
 
   .abt-txt1 {
