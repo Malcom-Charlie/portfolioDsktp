@@ -98,6 +98,7 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
+> Before getting started [watch this video](https://www.loom.com/share/ca4ec86dd93447ff8f1e2fbf73e5637b) to better understand this project.
 
 > To make use of this portfolio follow the following guidelines.
 
