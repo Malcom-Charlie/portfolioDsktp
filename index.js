@@ -2,6 +2,7 @@ const actvtMdl = document.getElementById('hamburger-menu');
 const body = document.querySelector('body');
 const modal = document.querySelector('.modal');
 const extBtn = document.getElementById('exit-button');
+const mdlLks = document.querySelectorAll('.modal__navigation__li');
 
 actvtMdl.addEventListener('click', (event) => {
   event.stopPropagation();
@@ -14,3 +15,11 @@ extBtn.addEventListener('click', (event) => {
   body.classList.remove('stop-scrolling');
   modal.classList.add('display-none');
 })
+
+for (let i = 0; i < mdlLks.length; i++) {
+  mdlLks[i].addEventListener('click', (event) => {
+    event.stopPropagation();
+    body.classList.remove('stop-scrolling');
+    modal.classList.add('display-none');
+  })
+}
