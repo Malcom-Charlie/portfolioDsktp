@@ -4,7 +4,8 @@
   font-style: normal;
 }
 
-body, html {
+body, 
+html {
   padding: 0%;
   margin: 0%;
 }
@@ -491,7 +492,6 @@ ul {
     gap: 30px;
     position: absolute;
     left: 30%;
-    transform: translate(-30% -40%);
   }
 
   .abt-txt1 {
@@ -540,7 +540,6 @@ ul {
     background-color: #6070ff;
     border-top-left-radius: 120px;
     width: 100vw;
-    height: 1;
     padding: 90px;
   }
 
@@ -620,7 +619,7 @@ ul {
 /* Navigation Modal */
 
 .modal {
-  background-color: rgba(96, 112, 255, .9);
+  background-color: rgba(96, 112, 255, 0.9);
   height: 100vh;
   position: absolute;
   z-index: 4;
