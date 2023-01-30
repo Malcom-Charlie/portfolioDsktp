@@ -14,12 +14,12 @@ extBtn.addEventListener('click', (event) => {
   event.stopPropagation();
   body.classList.remove('stop-scrolling');
   modal.classList.add('display-none');
-})
+});
 
-for (let i = 0; i < mdlLks.length; i++) {
+for (let i = 0; i < mdlLks.length; i += 1) {
   mdlLks[i].addEventListener('click', (event) => {
     event.stopPropagation();
     body.classList.remove('stop-scrolling');
     modal.classList.add('display-none');
-  })
+  });
 }
