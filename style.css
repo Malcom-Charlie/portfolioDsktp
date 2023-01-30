@@ -4,6 +4,15 @@
   font-style: normal;
 }
 
+body {
+  position: relative;
+}
+
+body, html {
+  padding: 0%;
+  margin: 0%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -593,4 +602,36 @@ ul {
     background: #7781e2;
     color: #fff;
   }
+}
+
+/* Navigation Modal */
+
+.modal {
+  background-color: rgba(96, 112, 255, .9);
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+}
+
+.modal__navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal__navigation__li {
+  margin-bottom: 1.8rem;
+}
+
+.modal__navigation__li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 2.3rem;
+}
+
+.modal__exit-button {
+  color: #fff;
+  display: flex;
+  justify-content: end;
+  padding: 25px 0;
 }
