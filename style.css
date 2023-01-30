@@ -4,13 +4,22 @@
   font-style: normal;
 }
 
-body {
-  position: relative;
-}
-
 body, html {
   padding: 0%;
   margin: 0%;
+}
+
+.display-none {
+  display: none;
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 header {
