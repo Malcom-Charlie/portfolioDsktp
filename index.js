@@ -1,4 +1,5 @@
 const actvtMdl = document.getElementById('hamburger-menu');
+const dctvtMenu = document.querySelector('.hamburger');
 const body = document.querySelector('body');
 const modal = document.querySelector('.modal');
 const extBtn = document.getElementById('exit-button');
@@ -8,12 +9,14 @@ actvtMdl.addEventListener('click', (event) => {
   event.stopPropagation();
   body.classList.add('stop-scrolling');
   modal.classList.remove('display-none');
+  dctvtMenu.classList.add('display-none');
 });
 
 extBtn.addEventListener('click', (event) => {
   event.stopPropagation();
   body.classList.remove('stop-scrolling');
   modal.classList.add('display-none');
+  dctvtMenu.classList.remove('display-none');
 });
 
 for (let i = 0; i < mdlLks.length; i += 1) {
@@ -21,5 +24,6 @@ for (let i = 0; i < mdlLks.length; i += 1) {
     event.stopPropagation();
     body.classList.remove('stop-scrolling');
     modal.classList.add('display-none');
+    dctvtMenu.classList.remove('display-none');
   });
 }
