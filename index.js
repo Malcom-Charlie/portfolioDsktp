@@ -27,3 +27,26 @@ for (let i = 0; i < mdlLks.length; i += 1) {
     dctvtMenu.classList.remove('display-none');
   });
 }
+
+// Portfolio Section
+import data from './portfoliodata.js';
+const workSectn = document.getElementById('portfolio');
+
+// To iterate elements in portfolio data
+for (let i = 0; < data.length ; i++ ) {
+  const portDiv = document.createElement('div');
+  portDiv.classList.add('port1');
+  const portImg = document.createElement('img');
+  const rghtDiv = document.createElement('div');
+  const portTtl1 = document.createElement('h2');
+  portTtl1.classList.add('title');
+  const deetsDiv = document.createElement('div');
+  const span1 = document.createElement('span');
+  span1.classList.add('clnt');
+  const span2 = document.createElement('span');
+  span2.classList.add('deets');
+  const bullet = document.createElement('img');
+  bullet.classList.add('crcl');
+  const span3 = document.createElement('span');
+}
+

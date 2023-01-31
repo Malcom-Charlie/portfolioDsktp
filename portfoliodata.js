@@ -24,7 +24,7 @@ const data = [
     image: './img/portfolio3.jpg',
   },
   {
-    title: 'Data example 2',
+    title: 'Data example 3',
     tags: ['CANOPY', 'Back-End', '2015'],
     description: 'A daily selection of privately personalized reads. No accounts or sign-ups required.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
