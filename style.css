@@ -23,6 +23,10 @@ html {
   margin: 0 auto;
 }
 
+.blur {
+  filter: blur(0.5rem);
+}
+
 #exit-button:hover {
   cursor: pointer;
 }
@@ -115,11 +119,6 @@ ul {
 .works {
   display: grid;
   grid-template-rows: auto auto auto auto;
-}
-
-.port {
-  display: none;
-  cursor: pointer;
 }
 
 .port1 {
@@ -391,12 +390,6 @@ ul {
   }
 
   /* Portfolio section */
-
-  .works,
-  .port1 {
-    display: none;
-    cursor: pointer;
-  }
 
   #portfolio {
     display: flex;
