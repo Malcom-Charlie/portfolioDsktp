@@ -18,7 +18,7 @@ actvtMdl.addEventListener('click', (event) => {
 
 extBtn.addEventListener('click', (event) => {
   event.stopPropagation();
-  body.classList.remove('stop-scrolling');
+  // body.classList.remove('stop-scrolling');
   modal.classList.add('display-none');
   dctvtMenu.classList.remove('display-none');
 });
@@ -38,7 +38,7 @@ const workSectn = document.getElementById('portfolio');
 // function creates project details
 function projectDetails(obj) {
   const container = document.getElementById('project-details');
-  body.classList.add('stop-scrolling');
+  // body.classList.add('stop-scrolling');
   container.classList.remove('display-none');
   // Create Modal elements
   const h2 = document.createElement('h2');
