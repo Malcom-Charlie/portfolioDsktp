@@ -123,7 +123,9 @@ for (let i = 0; i < data.length; i += 1) {
   const portDiv = document.createElement('div');
   portDiv.classList.add('port1');
   const portImg = document.createElement('img');
+  portImg.classList.add('port1__img');
   const rghtDiv = document.createElement('div');
+  rghtDiv.classList.add('imhere')
   const portTtl1 = document.createElement('h2');
   portTtl1.classList.add('title');
   const deetsDiv = document.createElement('div');
@@ -174,9 +176,9 @@ for (let i = 0; i < data.length; i += 1) {
   deetsDiv.appendChild(span2);
   deetsDiv.appendChild(bullet2);
   deetsDiv.appendChild(span3);
-  rghtDiv.appendChild(description);
+  rghtDiv.append(description, btnDiv);
   rghtDiv.appendChild(tchnlgs);
-  portDiv.appendChild(btnDiv);
+  // portDiv.appendChild(btnDiv);
   btnDiv.appendChild(btn);
   btnTxt.innerText = 'See Project';
   btn.appendChild(btnTxt);
