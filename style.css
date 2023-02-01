@@ -28,7 +28,8 @@ html {
   filter: blur(0.5rem);
 }
 
-#exit-button:hover {
+#exit-button:hover,
+#detail-exit {
   cursor: pointer;
 }
 
@@ -115,11 +116,6 @@ a {
 
 ul {
   padding-inline-start: 0;
-}
-
-.works {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
 }
 
 .port1 {
@@ -396,21 +392,9 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 90px;
-    gap: 80px;
     width: 100vw;
-    height: 2694px;
+    height: 2094px;
     background-color: #f1f2f5;
-  }
-
-  .port {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    border-radius: 24px;
-    width: 1156px;
-    height: 496px;
-    background-color: #fff;
   }
 
   .prt-img {

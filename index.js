@@ -18,7 +18,7 @@ actvtMdl.addEventListener('click', (event) => {
 
 extBtn.addEventListener('click', (event) => {
   event.stopPropagation();
-  // body.classList.remove('stop-scrolling');
+  body.classList.remove('stop-scrolling');
   modal.classList.add('display-none');
   dctvtMenu.classList.remove('display-none');
 });
@@ -53,7 +53,7 @@ function projectDetails(obj) {
     body.classList.remove('stop-scrolling');
     container.classList.add('display-none');
     container.innerHTML = '';
-  })
+  });
   const tagsDiv = document.createElement('div');
   tagsDiv.classList.add('project-detail__tags');
   const tag1 = document.createElement('p');
