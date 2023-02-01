@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
     form.submit();
   } else {
     const p = document.createElement('p');
-    p.innerText = 'Please be sure the email is lower case';
+    p.innerText = 'Please use all lower case in email.';
     form.appendChild(p);
   }
 });
