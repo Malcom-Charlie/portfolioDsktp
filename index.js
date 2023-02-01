@@ -74,7 +74,7 @@ function projectDetails(obj) {
   const rigthDiv = document.createElement('div');
   const line = document.createElement('hr');
   line.classList.add('project-detail__line');
-  for (let i = 0; i < obj.technologies.length; i++) {
+  for (let i = 0; i < obj.technologies.length; i += 1) {
     const li = document.createElement('li');
     li.innerText = obj.technologies[i];
     li.classList.add('technologies__li');
@@ -86,11 +86,13 @@ function projectDetails(obj) {
   const btnImg2 = document.createElement('img');
   const button2 = document.createElement('button');
   // Add content
+  const { tags } = obj;
+  const [tagA, tagB, tagC] = tags;
   h2.innerText = obj.title;
   exitButton.innerText = 'close';
-  tag1.innerText = obj.tags[0];
-  tag2.innerText = obj.tags[1];
-  tag3.innerText = obj.tags[2];
+  tag1.innerText = tagA;
+  tag2.innerText = tagB;
+  tag3.innerText = tagC;
   bullet1.src = './images/circleicn.png';
   bullet2.src = './images/circleicn.png';
   mainImg.src = obj.image;
@@ -116,7 +118,7 @@ function projectDetails(obj) {
 }
 
 // To iterate elements in portfolio data
-for (let i = 0; i < data.length; i++) {
+for (let i = 0; i < data.length; i += 1) {
   // Creating elements
   const portDiv = document.createElement('div');
   portDiv.classList.add('port1');
@@ -138,7 +140,7 @@ for (let i = 0; i < data.length; i++) {
   const tchnlgs = document.createElement('ul');
   tchnlgs.classList.add('tags');
   // Technologies for loop
-  for (let j = 0; j < data[i].technologies[j]; j++) {
+  for (let j = 0; j < data[i].technologies[j]; j += 1) {
     const li = document.createElement('li');
     li.classList.add('tgs');
     li.innerText = data[i].tags[j];
@@ -150,12 +152,14 @@ for (let i = 0; i < data.length; i++) {
   const btnTxt = document.createElement('span');
   btnTxt.classList.add('btntxt');
   // Adding content
+  const { tags } = data[i];
+  const [tagA, tagB, tagC] = tags;
   portImg.src = data[i].image;
   portImg.alt = `${data[i].title} img`;
   portTtl1.innerText = data[i].title;
-  span1.innerText = data[i].tags[0];
-  span2.innerText = data[i].tags[1];
-  span3.innerText = data[i].tags[2];
+  span1.innerText = tagA;
+  span2.innerText = tagB;
+  span3.innerText = tagC;
   bullet.src = 'images/circleicn.png';
   bullet2.src = 'images/circleicn.png';
   description.innerText = data[i].description;
