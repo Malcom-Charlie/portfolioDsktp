@@ -665,6 +665,7 @@ ul {
   display: flex;
   gap: 10px;
 }
+
 .project-detail__technologies li {
   list-style: none;
   background-color: #ebebff;
@@ -702,7 +703,7 @@ ul {
   max-width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .project-detail__textDiv {
     display: grid;
     grid-template-columns: 3fr 1fr;
