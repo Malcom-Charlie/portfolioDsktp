@@ -712,3 +712,34 @@ ul {
   margin-right: 5px;
   align-items: center;
 }
+
+.project-detail__imgDiv img {
+  width: 1000px;
+  max-width: 100%;
+}
+
+@media(min-width: 768px) {
+  .project-detail__textDiv {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+  }
+
+  .project-detail__button {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .project-detail__buttons {
+    gap: 3px;
+  }
+}
+
+.project-detail__line {
+  border: 1px solid #ebecf0;
+  margin: 20px 0;
+}
+
+.project-detail__header h2 {
+  margin: 0;
+}

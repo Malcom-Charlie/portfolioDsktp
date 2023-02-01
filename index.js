@@ -64,10 +64,18 @@ function projectDetails(obj) {
   bullet2.classList.add('project-detail__bullet');
   const tag3 = document.createElement('span');
   const mainImg = document.createElement('img');
+  const imgDiv = document.createElement('div');
+  imgDiv.classList.add('project-detail__imgDiv');
   const description = document.createElement('p');
   description.classList.add('project-detail__description');
   const techDiv = document.createElement('ul');
   techDiv.classList.add('project-detail__technologies');
+  const textDiv = document.createElement('div');
+  textDiv.classList.add('project-detail__textDiv');
+  const leftDiv = document.createElement('div');
+  const rigthDiv = document.createElement('div');
+  const line = document.createElement('hr');
+  line.classList.add('project-detail__line');
   for (let i = 0; i < obj.technologies.length; i++) {
     const li = document.createElement('li');
     li.innerText = obj.technologies[i];
@@ -94,7 +102,11 @@ function projectDetails(obj) {
   button1.classList.add('project-detail__button');
   button2.classList.add('project-detail__button');
   // Append
-  container.append(modalHeader, tagsDiv, mainImg, description, techDiv, buttonsDiv);
+  container.append(modalHeader, tagsDiv, imgDiv, textDiv);
+  imgDiv.appendChild(mainImg);
+  textDiv.append(leftDiv, rigthDiv);
+  leftDiv.appendChild(description);
+  rigthDiv.append(techDiv, line, buttonsDiv);
   modalHeader.append(h2, exitButton);
   tagsDiv.append(tag1, bullet1, tag2, bullet2, tag3);
   buttonsDiv.append(button1, button2);
