@@ -1,5 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable prefer-destructuring */
 import data from './portfoliodata.js';
 
 const actvtMdl = document.getElementById('hamburger-menu');

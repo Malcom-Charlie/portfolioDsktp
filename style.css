@@ -635,6 +635,8 @@ ul {
   background-color: #fff;
   border-radius: 20px;
   padding: 23px;
+  width: 85%;
+  border: 1px solid #cfd8dc;
 }
 
 .project-detail__tags p {

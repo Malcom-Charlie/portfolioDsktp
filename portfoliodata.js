@@ -5,7 +5,7 @@ const data = [
     description: 'A daily selection of privately personalized reads. No accounts or sign-ups required.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     link: '',
-    image: './images/card2pic.png',
+    image: './images/card1pic.png',
   },
   {
     title: 'Data example 2',
