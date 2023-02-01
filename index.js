@@ -34,28 +34,40 @@ for (let i = 0; i < mdlLks.length; i += 1) {
 
 // Portfolio Section
 const workSectn = document.getElementById('portfolio');
-
 // function creates project details
 function projectDetails(obj) {
+  const blur = document.getElementById('blur');
+  blur.classList.add('blur');
+  body.classList.add('stop-scrolling');
   const container = document.getElementById('project-details');
-  // body.classList.add('stop-scrolling');
   container.classList.remove('display-none');
   // Create Modal elements
   const h2 = document.createElement('h2');
+  const modalHeader = document.createElement('div');
+  modalHeader.classList.add('project-detail__header');
+  const exitButton = document.createElement('i');
+  exitButton.classList.add('material-icons');
+  exitButton.setAttribute('id', 'detail-exit');
+  exitButton.addEventListener('click', () => {
+    blur.classList.remove('blur');
+    body.classList.remove('stop-scrolling');
+    container.classList.add('display-none');
+    container.innerHTML = '';
+  })
   const tagsDiv = document.createElement('div');
-  tagsDiv.classList.add('tags');
+  tagsDiv.classList.add('project-detail__tags');
   const tag1 = document.createElement('p');
   const bullet1 = document.createElement('img');
-  bullet1.classList.add('bullet');
+  bullet1.classList.add('project-detail__bullet');
   const tag2 = document.createElement('span');
   const bullet2 = document.createElement('img');
-  bullet2.classList.add('bullet');
+  bullet2.classList.add('project-detail__bullet');
   const tag3 = document.createElement('span');
   const mainImg = document.createElement('img');
   const description = document.createElement('p');
-  description.classList.add('description');
+  description.classList.add('project-detail__description');
   const techDiv = document.createElement('ul');
-  techDiv.classList.add('technologies');
+  techDiv.classList.add('project-detail__technologies');
   for (let i = 0; i < obj.technologies.length; i++) {
     const li = document.createElement('li');
     li.innerText = obj.technologies[i];
@@ -64,12 +76,12 @@ function projectDetails(obj) {
   }
   const buttonsDiv = document.createElement('div');
   const button1 = document.createElement('button');
-  button1.classList.add('primary-button');
   const btnImg1 = document.createElement('img');
   const btnImg2 = document.createElement('img');
   const button2 = document.createElement('button');
   // Add content
   h2.innerText = obj.title;
+  exitButton.innerText = 'close';
   tag1.innerText = obj.tags[0];
   tag2.innerText = obj.tags[1];
   tag3.innerText = obj.tags[2];
@@ -77,15 +89,16 @@ function projectDetails(obj) {
   bullet2.src = './images/circleicn.png';
   mainImg.src = obj.image;
   description.innerText = obj.description;
-  btnImg1.src = './img/see-live.svg';
-  btnImg2.src = './img/github-in-button.svg';
-  button1.classList.add('projectDetails__button');
-  button2.classList.add('projectDetails__button');
+  btnImg1.src = './images/see-live.svg';
+  btnImg2.src = './images/github-in-button.svg';
+  button1.classList.add('project-detail__button');
+  button2.classList.add('project-detail__button');
   // Append
-  container.append(h2, tagsDiv, mainImg, description, techDiv, buttonsDiv);
+  container.append(modalHeader, tagsDiv, mainImg, description, techDiv, buttonsDiv);
+  modalHeader.append(h2, exitButton);
   tagsDiv.append(tag1, bullet1, tag2, bullet2, tag3);
   buttonsDiv.append(button1, button2);
-  buttonsDiv.classList.add('projectDetails__buttons');
+  buttonsDiv.classList.add('project-detail__buttons');
   button1.innerText = 'See live';
   button1.appendChild(btnImg1);
   button2.innerText = 'See source';
