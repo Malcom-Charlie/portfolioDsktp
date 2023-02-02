@@ -8,6 +8,7 @@ body,
 html {
   padding: 0%;
   margin: 0%;
+  position: relative;
 }
 
 .display-none {
@@ -23,7 +24,12 @@ html {
   margin: 0 auto;
 }
 
-#exit-button:hover {
+.blur {
+  filter: blur(0.5rem);
+}
+
+#exit-button:hover,
+#detail-exit {
   cursor: pointer;
 }
 
@@ -75,14 +81,13 @@ a {
 
 .text-area {
   position: absolute;
-  top: 50%;
+  top: 8%;
   left: 45%;
   transform: translate(-40%, -50%);
 }
 
 .prymrytxt1 {
   color: #172b4d;
-  margin: auto;
   font-size: 40px;
   line-height: 45px;
   width: 327px;
@@ -90,7 +95,6 @@ a {
 
 .prymrytxt2 {
   color: #344563;
-  margin: auto;
   font-size: 16px;
   width: 327px;
 }
@@ -112,16 +116,6 @@ ul {
   padding-inline-start: 0;
 }
 
-.works {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-}
-
-.port {
-  display: none;
-  cursor: pointer;
-}
-
 .port1 {
   display: flex;
   flex-direction: column;
@@ -130,9 +124,13 @@ ul {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  max-width: 327px;
-  margin: auto;
-  margin-bottom: 70px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.port1__img {
+  width: 1200px;
+  max-width: 100%;
 }
 
 .title {
@@ -190,12 +188,9 @@ ul {
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-  max-width: 330px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 100px 10px;
+  max-width: 90%;
 }
 
 .abtclmn {
@@ -222,7 +217,6 @@ ul {
   background: #f7f7f9;
   border-radius: 8px;
   align-items: center;
-  width: 327px;
   margin-bottom: 10px;
   padding: 8px 16px;
 }
@@ -239,17 +233,12 @@ ul {
   padding: 2px;
 }
 
-.space {
-  height: 80px;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 375px;
-  margin: auto;
+  padding: 100px 50px;
   background-color: #6070ff;
   font-family: 'Poppins', sans-serif;
   background-image: url(./images/bglment.png);
@@ -259,19 +248,17 @@ ul {
 }
 
 .contact-intro {
-  display: inherit;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .cntct-ttl {
-  display: flex;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-style: normal;
   line-height: 52px;
   color: #fff;
   margin: 10px;
+  text-align: center;
 }
 
 .cntct-info {
@@ -312,7 +299,7 @@ ul {
   text-align: center;
   font-size: 17px;
   margin-left: 9px;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .sbmt-btn:hover {
@@ -320,15 +307,30 @@ ul {
   color: #fff;
 }
 
-.separator {
-  background: #0d151e;
-  width: 134px;
-  height: 6px;
-  margin-bottom: 7px;
-  border-radius: 12px;
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f2f5;
+  padding: 80px 0;
+  gap: 70px;
 }
 
 @media screen and (min-width: 768px) {
+  .port1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #172b4d;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
   .hamburger {
     display: none;
     cursor: pointer;
@@ -392,38 +394,6 @@ ul {
 
   /* Portfolio section */
 
-  .works,
-  .port1 {
-    display: none;
-    cursor: pointer;
-  }
-
-  #portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 90px;
-    gap: 80px;
-    width: 100vw;
-    height: 2694px;
-    background-color: #f1f2f5;
-  }
-
-  .port {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    border-radius: 24px;
-    width: 1156px;
-    height: 496px;
-    background-color: #fff;
-  }
-
-  .prt-img {
-    width: 100%;
-    height: 100%;
-  }
-
   .prt-txt {
     display: flex;
     flex-direction: column;
@@ -482,31 +452,20 @@ ul {
     cursor: pointer;
   }
 
-  #about {
-    width: 100vw;
-    height: 150vh;
-  }
-
   .abttext {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-    position: absolute;
-    left: 30%;
   }
 
   .abt-txt1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 20vw;
-    margin-top: 13pc;
   }
 
   .abt-txt2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 13pc;
+    max-width: 90%;
   }
 
   .abt-prymrytxt1 {
@@ -539,7 +498,6 @@ ul {
     background-repeat: no-repeat;
     background-color: #6070ff;
     border-top-left-radius: 120px;
-    width: 100vw;
     padding: 90px;
   }
 
@@ -646,4 +604,131 @@ ul {
   display: flex;
   justify-content: end;
   padding: 25px 0;
+}
+
+.project-details {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 23px;
+  width: 85%;
+  border: 1px solid #cfd8dc;
+  overflow-y: scroll;
+  max-width: 90%;
+}
+
+.project-detail__tags p {
+  margin: 0;
+  color: #344563;
+  font-weight: 700;
+}
+
+.project-detail__tags span {
+  color: #7a869a;
+}
+
+.project-detail__tags {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.project-detail__bullet {
+  height: 7px;
+}
+
+.project-detail__description {
+  color: #344563;
+}
+
+.project-detail__technologies {
+  display: flex;
+  gap: 10px;
+}
+
+.project-detail__technologies li {
+  list-style: none;
+  background-color: #ebebff;
+  color: #6070ff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.project-detail__button {
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  color: #396df2;
+  gap: 10px;
+}
+
+.project-detail__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.project-detail__header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.project-detail__imgDiv img {
+  width: 1200px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .project-details {
+    height: 90vh;
+  }
+
+  .project-detail__textDiv {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    width: 1200px;
+    max-width: 100%;
+  }
+
+  .project-detail__button {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .project-detail__buttons {
+    gap: 3px;
+  }
+}
+
+.project-detail__line {
+  border: 1px solid #ebecf0;
+  margin: 20px 0;
+}
+
+.project-detail__header h2 {
+  margin: 0;
+}
+
+.port1__technologies__li {
+  background-color: #ebebff;
+  color: #6070ff;
+  list-style: none;
+  padding: 3px 6px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.port1__technologies {
+  display: flex;
+  gap: 15px;
 }
