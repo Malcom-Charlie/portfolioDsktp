@@ -81,14 +81,13 @@ a {
 
 .text-area {
   position: absolute;
-  top: 11%;
+  top: 8%;
   left: 45%;
   transform: translate(-40%, -50%);
 }
 
 .prymrytxt1 {
   color: #172b4d;
-  /* margin: auto; */
   font-size: 40px;
   line-height: 45px;
   width: 327px;
@@ -96,7 +95,6 @@ a {
 
 .prymrytxt2 {
   color: #344563;
-  /* margin: auto; */
   font-size: 16px;
   width: 327px;
 }
@@ -191,7 +189,7 @@ ul {
 
 .about {
   margin: 0 auto;
-  padding: 100px 10px ;
+  padding: 100px 10px;
   max-width: 90%;
 }
 
@@ -234,7 +232,6 @@ ul {
 .crcl {
   padding: 2px;
 }
-
 
 .contact {
   display: flex;
@@ -455,7 +452,6 @@ ul {
     cursor: pointer;
   }
 
-
   .abttext {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -469,7 +465,7 @@ ul {
   }
 
   .abt-txt2 {
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   .abt-prymrytxt1 {
@@ -622,7 +618,6 @@ ul {
   width: 85%;
   border: 1px solid #cfd8dc;
   overflow-y: scroll;
-  width: 1000px;
   max-width: 90%;
 }
 
@@ -693,7 +688,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .project-details{
+  .project-details {
     height: 90vh;
   }
 
@@ -725,12 +720,12 @@ ul {
 }
 
 .port1__technologies__li {
- background-color: #ebebff;
- color: #6070ff;
- list-style: none;
- padding: 3px 6px;
- border-radius: 8px;
- font-size: 12px;
+  background-color: #ebebff;
+  color: #6070ff;
+  list-style: none;
+  padding: 3px 6px;
+  border-radius: 8px;
+  font-size: 12px;
 }
 
 .port1__technologies {
