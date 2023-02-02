@@ -140,11 +140,11 @@ for (let i = 0; i < data.length; i += 1) {
   const span3 = document.createElement('span');
   const description = document.createElement('p');
   const tchnlgs = document.createElement('ul');
-  tchnlgs.classList.add('tags');
+  tchnlgs.classList.add('port1__technologies');
   // Technologies for loop
-  for (let j = 0; j < data[i].technologies[j]; j += 1) {
+  for (let j = 0; j < data[i].technologies.length; j += 1) {
     const li = document.createElement('li');
-    li.classList.add('tgs');
+    li.classList.add('port1__technologies__li');
     li.innerText = data[i].tags[j];
     tchnlgs.appendChild(li);
   }
@@ -176,9 +176,7 @@ for (let i = 0; i < data.length; i += 1) {
   deetsDiv.appendChild(span2);
   deetsDiv.appendChild(bullet2);
   deetsDiv.appendChild(span3);
-  rghtDiv.append(description, btnDiv);
-  rghtDiv.appendChild(tchnlgs);
-  // portDiv.appendChild(btnDiv);
+  rghtDiv.append(description,tchnlgs, btnDiv);
   btnDiv.appendChild(btn);
   btnTxt.innerText = 'See Project';
   btn.appendChild(btnTxt);

@@ -88,7 +88,7 @@ a {
 
 .prymrytxt1 {
   color: #172b4d;
-  margin: auto;
+  /* margin: auto; */
   font-size: 40px;
   line-height: 45px;
   width: 327px;
@@ -96,7 +96,7 @@ a {
 
 .prymrytxt2 {
   color: #344563;
-  margin: auto;
+  /* margin: auto; */
   font-size: 16px;
   width: 327px;
 }
@@ -190,12 +190,9 @@ ul {
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-  max-width: 330px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 100px 10px ;
+  max-width: 90%;
 }
 
 .abtclmn {
@@ -222,7 +219,6 @@ ul {
   background: #f7f7f9;
   border-radius: 8px;
   align-items: center;
-  width: 327px;
   margin-bottom: 10px;
   padding: 8px 16px;
 }
@@ -239,17 +235,15 @@ ul {
   padding: 2px;
 }
 
-.space {
-  height: 80px;
-}
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 375px;
-  margin: auto;
+  padding: 100px 50px;
+  /* width: 375px; */
+  /* margin: auto; */
   background-color: #6070ff;
   font-family: 'Poppins', sans-serif;
   background-image: url(./images/bglment.png);
@@ -259,19 +253,20 @@ ul {
 }
 
 .contact-intro {
-  display: inherit;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  /* max-width: 90%;
+  padding: 0 70px; */
 }
 
 .cntct-ttl {
-  display: flex;
+  /* display: flex; */
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-style: normal;
   line-height: 52px;
   color: #fff;
   margin: 10px;
+  text-align: center;
 }
 
 .cntct-info {
@@ -339,7 +334,8 @@ ul {
 
 @media screen and (min-width: 768px) {
   .port1 {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
@@ -472,31 +468,26 @@ ul {
     cursor: pointer;
   }
 
-  #about {
-    width: 100vw;
-    height: 150vh;
-  }
 
   .abttext {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-    position: absolute;
-    left: 30%;
+    /* position: absolute;
+    left: 30%; */
   }
 
   .abt-txt1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 20vw;
-    margin-top: 13pc;
   }
 
   .abt-txt2 {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 13pc;
+    align-items: center; */
+    max-width: 90%; 
   }
 
   .abt-prymrytxt1 {
@@ -529,7 +520,7 @@ ul {
     background-repeat: no-repeat;
     background-color: #6070ff;
     border-top-left-radius: 120px;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 90px;
   }
 
@@ -649,6 +640,10 @@ ul {
   padding: 23px;
   width: 85%;
   border: 1px solid #cfd8dc;
+  overflow-y: scroll;
+  height: 90vh;
+  width: 1000px;
+  max-width: 90%;
 }
 
 .project-detail__tags p {
@@ -713,7 +708,7 @@ ul {
 }
 
 .project-detail__imgDiv img {
-  width: 1000px;
+  width: 1200px;
   max-width: 100%;
 }
 
@@ -722,6 +717,8 @@ ul {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 15px;
+    width: 1200px;
+    max-width: 100%;
   }
 
   .project-detail__button {
@@ -741,4 +738,18 @@ ul {
 
 .project-detail__header h2 {
   margin: 0;
+}
+
+.port1__technologies__li {
+ background-color: #ebebff;
+ color: #6070ff;
+ list-style: none;
+ padding: 3px 6px;
+ border-radius: 8px;
+ font-size: 12px;
+}
+
+.port1__technologies {
+  display: flex;
+  gap: 15px;
 }
