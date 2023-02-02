@@ -176,7 +176,7 @@ for (let i = 0; i < data.length; i += 1) {
   deetsDiv.appendChild(span2);
   deetsDiv.appendChild(bullet2);
   deetsDiv.appendChild(span3);
-  rghtDiv.append(description,tchnlgs, btnDiv);
+  rghtDiv.append(description, tchnlgs, btnDiv);
   btnDiv.appendChild(btn);
   btnTxt.innerText = 'See Project';
   btn.appendChild(btnTxt);
