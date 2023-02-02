@@ -125,7 +125,7 @@ for (let i = 0; i < data.length; i += 1) {
   const portImg = document.createElement('img');
   portImg.classList.add('port1__img');
   const rghtDiv = document.createElement('div');
-  rghtDiv.classList.add('imhere');
+  rghtDiv.classList.add('port1__rghtDiv');
   const portTtl1 = document.createElement('h2');
   portTtl1.classList.add('title');
   const deetsDiv = document.createElement('div');
