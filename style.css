@@ -81,7 +81,7 @@ a {
 
 .text-area {
   position: absolute;
-  top: 7%;
+  top: 11%;
   left: 45%;
   transform: translate(-40%, -50%);
 }
@@ -308,14 +308,6 @@ ul {
 .sbmt-btn:hover {
   background: #7781e2;
   color: #fff;
-}
-
-.separator {
-  background: #0d151e;
-  width: 134px;
-  height: 6px;
-  margin-bottom: 7px;
-  border-radius: 12px;
 }
 
 #portfolio {
