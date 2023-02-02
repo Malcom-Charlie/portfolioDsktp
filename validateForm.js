@@ -3,6 +3,7 @@ const emailErrMsg = document.getElementById('email-message');
 const emailCapitalChk = /[A-Z]/;
 
 form.addEventListener('submit', (event) => {
+  localStorage.clear();
   const email = document.querySelector('#email').value;
   if (emailCapitalChk.test(email)) {
     event.preventDefault();
