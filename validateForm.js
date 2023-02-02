@@ -1,20 +1,12 @@
 const form = document.getElementById('contactForm');
-const { email } = form.elements;
-
-function validateEmail(str) {
-  if (str.toLowerCase === str) {
-    return true;
-  }
-  return false;
-}
+const emailErrMsg = document.getElementById('email-message');
+const emailCapitalChk = /[A-Z]/;
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (validateEmail(email.value)) {
-    form.submit();
-  } else {
-    const p = document.createElement('p');
-    p.innerText = 'Please use all lower case in email.';
-    form.appendChild(p);
+  const email = document.querySelector('#email').value;
+  if (emailCapitalChk.test(email)) {
+    event.preventDefault();
+    emailErrMsg.innerHTML += `*Please ensure email field has lower case characters. Try this instead: <strong>${email.toLowerCase()}</strong>*`;
+    emailErrMsg.classList.remove('hide');
   }
 });
