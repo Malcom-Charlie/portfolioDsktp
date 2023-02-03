@@ -1,4 +1,4 @@
-const data = [
+const dat = [
   {
     title: 'Data example 1',
     tags: ['CANOPY', 'Back-End', '2015'],
@@ -25,4 +25,4 @@ const data = [
   },
 ];
 
-export default data;
+export default dat;

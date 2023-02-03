@@ -9,7 +9,7 @@ const mdlLks = document.querySelectorAll('.modal__navigation__li');
 
 actvtMdl.addEventListener('click', (event) => {
   event.stopPropagation();
-  // body.classList.add('stop-scrolling');
+  body.classList.add('stop-scrolling');
   modal.classList.remove('display-none');
   dctvtMenu.classList.add('display-none');
 });
